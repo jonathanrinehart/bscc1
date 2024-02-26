@@ -1,0 +1,29 @@
+/*
+! Fancy Animations v1.2.2 | 2024-02-25 20:30:16
+*/
+
+:root{--fba-delay: 0.5s;--fba-duration: 1s;--fba-primary-r: 255;--fba-primary-g: 208;--fba-primary-b: 51;--fba-primary-a: 1;--fba-primary-trans-30: rgba(var(--fba-primary-r), var(--fba-primary-g), var(--fba-primary-b), 0.3);--fba-primary-trans-50: rgba(var(--fba-primary-r), var(--fba-primary-g), var(--fba-primary-b), 0.5);--fba-primary-trans-80: rgba(var(--fba-primary-r), var(--fba-primary-g), var(--fba-primary-b), 0.8);--fba-secondary-r: 140;--fba-secondary-g: 58;--fba-secondary-b: 255;--fba-secondary-a: 1;--fba-secondary-trans-30: rgba(var(--fba-secondary-r), var(--fba-secondary-g), var(--fba-secondary-b), 0.3);--fba-secondary-trans-50: rgba(var(--fba-secondary-r), var(--fba-secondary-g), var(--fba-secondary-b), 0.5);--fba-secondary-trans-80: rgba(var(--fba-secondary-r), var(--fba-secondary-g), var(--fba-secondary-b), 0.8);--fba-white-r: 255;--fba-white-g: 255;--fba-white-b: 255;--fba-white-a: 1;--fba-white-trans-30: rgba(var(--fba-white-r), var(--fba-white-g), var(--fba-white-b), 0.3);--fba-white-trans-50: rgba(var(--fba-white-r), var(--fba-white-g), var(--fba-white-b), 0.5);--fba-white-trans-80: rgba(var(--fba-white-r), var(--fba-white-g), var(--fba-white-b), 0.8);--fba-black-r: 12;--fba-black-g: 20;--fba-black-b: 39;--fba-black-a: 1;--fba-black-trans-30: rgba(var(--fba-black-r), var(--fba-black-g), var(--fba-black-b), 0.3);--fba-black-trans-50: rgba(var(--fba-black-r), var(--fba-black-g), var(--fba-black-b), 0.5);--fba-black-trans-80: rgba(var(--fba-black-r), var(--fba-black-g), var(--fba-black-b), 0.8);}
+[class*=fb-anim--],[class*=fb-anim--]:after,[class^=fb-anim--],[class^=fb-anim--]:after{animation-delay:var(--fba-delay);animation-duration:var(--fba-duration);animation-fill-mode:forwards;animation-timing-function:cubic-bezier(.75,1.5,.5,1);opacity:0}@keyframes fb-anim--visible{to{opacity:1}}[class*=fb-hover--],[class*=fb-hover--]:after,[class^=fb-hover--],[class^=fb-hover--]:after{animation-timing-function:cubic-bezier(.75,1.5,.5,1);transition-duration:.5s;transition-property:all}[class*=fb-hover--]:hover,[class*=fb-hover--]:hover:after,[class^=fb-hover--]:hover,[class^=fb-hover--]:hover:after{animation-delay:0s;animation-duration:.7s}@property --border-angle{syntax:"<angle>";inherits:true;initial-value:0deg}:root{--border-size:2px;--border-angle:0}body{overflow-x:hidden}
+.fb-anim--nodelay, .fb-anim--nodelay:after {animation-delay: 0s;}
+.fb-anim--nodelay, .fb-anim--nodelay:after {animation-delay: 0s;}
+.fb-anim--fade-in, .fb-anim--fan-ltr {animation-name: var(--fb-anim-name);}
+.fb-anim--slide-btt-s {animation-name: var(--fb-anim-name);animation-timing-function: ease-in-out;transform: translateY(0);}
+@keyframes fb-anim--slide-btt-s {0% {transform: translateY(50%);}
+	to {transform: translateY(0);}}
+.fb-hover--ring-primary-l:hover {animation-name: fb-hover--ring-primary-l;}
+@keyframes fb-hover--ring-primary-l {0% {box-shadow: 0 0 0 0 var(--fba-primary-trans-30);}
+	to {box-shadow: 0 0 0 3em transparent;}}
+.fb-hover--ring-secondary-l:hover {animation-name: fb-hover--ring-secondary-l;}
+@keyframes fb-hover--ring-secondary-l {0% {box-shadow: 0 0 0 0 var(--fba-secondary-trans-30);}
+	to {box-shadow: 0 0 0 3em transparent;}}
+.fb-hover--wobble-b:hover {animation-name: fb-hover--wobble-b;animation-timing-function: ease-in-out;transform: perspective(1px) translateZ(0);transform-origin: 100% 0;}
+@keyframes fb-hover--wobble-b {12% {transform: skew(-12deg);}
+	33% {transform: skew(10deg);}
+	50% {transform: skew(-6deg);}
+	64% {transform: skew(4deg);}
+	85% {transform: skew(-2deg);}
+	to {transform: skew(0);}}
+.fb-hover--zoom-out:hover, .fb-hover--zoom:hover {transition-timing-function: cubic-bezier(.47,2.02,.31,-.36);}
+.fb-hover--zoom-out:hover {transform: scale(.93);}
+.fb-hover--float-shadow:hover, .fb-hover--float:hover {transform: scale(1.05) translateY(-10%);}
+.fb-hover--float-shadow:hover {box-shadow: 0 30px 30px -10px var(--fba-black-trans-30);}
